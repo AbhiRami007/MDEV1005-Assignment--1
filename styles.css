@@ -51,6 +51,9 @@ h3 {
   background-color: #343a40;
   color: white;
   padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 .list-group-item {
   background-color: #ffffff;
@@ -59,13 +62,6 @@ h3 {
 }
 .list-group-item:hover {
   background-color: #e9ecef;
-}
-
-.header-section {
-  background: linear-gradient(to right, #28a745, #17a2b8);
-  color: #fff;
-  padding: 60px 0;
-  margin-bottom: -10px;
 }
 .service-card {
   border: none;
@@ -78,4 +74,54 @@ h3 {
 .service-card img {
   max-height: 200px;
   object-fit: cover;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  /* for tablets */
+  #home {
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  /* for phones */
+  #home {
+    text-align: center;
+  }
+
+  .navbar {
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
